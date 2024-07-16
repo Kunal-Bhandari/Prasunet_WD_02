@@ -9,6 +9,7 @@ The application offers realtime weather updates with location based tracking.
 ## Setting up and running the project
 
 - First start up the virtual environment using `.env/bin/activate`, if you're using mac or linux use `source env/bin/activate`
+- Create an account on weatherAPI and use your own API key in .env file.
 - Next run the python server using `python manage.py runserver`
 
 ## Screenshots
