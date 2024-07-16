@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- header -->
+    <div class="centered bg-primary">
+        {% block core_header%}
+        <h3 style="color: white;">
+            <a href="/" style="color: white; text-decoration: none;">
+                Real-Time Weather Dashboard with Django and APIs
+            </a>
+        </h3>
+        {% endblock core_header%}
+    </div>
+
+    <!-- body  -->
+    <div class="centered">
+        {% block core_body%}
+
+        {% endblock core_body%}
+    </div>
+
+    <!-- footer -->
+    <div class="centered bg-light">
+        {% block core_footer%}
+        <h4>https://github.com/Kunal-Bhandari</h4>
+        {% endblock core_footer%}
+    </div>
+</body>
+</html>
